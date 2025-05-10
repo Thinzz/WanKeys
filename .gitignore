@@ -1,0 +1,11 @@
+# macOS 系统垃圾
+.DS_Store
+
+# VS Code 和其他编辑器配置
+.vscode/
+.idea/
+
+# 日志或系统文件
+*.log
+*.swp
+*.swo
