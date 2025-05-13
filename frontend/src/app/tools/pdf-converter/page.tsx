@@ -128,6 +128,16 @@ export default function PdfConverterPage() {
     setConvertedFiles([])
   }
 
+  const testBackend = async () => {
+    try {
+      const res = await fetch("http://localhost:8000/api/ping")
+      const data = await res.json()
+      console.log("✅ Backend says:", data)
+    } catch (err) {
+      console.error("❌ Backend error:", err)
+    }
+  }
+
   return (
     <div className="container mx-auto px-4 py-6">
       <div className="mb-6">
@@ -427,6 +437,9 @@ export default function PdfConverterPage() {
                 Our conversion engine preserves formatting, images, and layout for accurate results.
               </p>
             </div>
+
+            <Button onClick={testBackend}>Test Backend</Button>
+
           </div>
         </div>
       </div>
