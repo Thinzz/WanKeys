@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
               <Wrench className="h-5 w-5 text-gray-700" />
-              <h1 className="text-xl font-medium text-gray-800">UtilityHub</h1>
+              <h1 className="text-xl font-medium text-gray-800">WanKeys</h1>
             </div>
             <nav className="hidden md:flex items-center gap-6">
               <Link href="#download" className="text-sm text-gray-600 hover:text-gray-900">
@@ -142,6 +142,14 @@ export default function Home() {
             </p>
 
             <ToolCarousel>
+              <ToolCard
+                title="Youtube to mp3"
+                description="Convert youtube to mp3"
+                details="Convert youtube links to mp3 files"
+                icon={Music}
+                href=""
+              />
+
               <ToolCard
                 title="PDF Converter"
                 description="Convert to/from PDF"
@@ -483,7 +491,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-6 pt-4 border-t border-gray-200 text-center text-xs text-gray-600">
-            <p>© {new Date().getFullYear()} UtilityHub. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} WanKeys. All rights reserved.</p>
           </div>
         </div>
       </footer>
